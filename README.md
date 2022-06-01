@@ -16,6 +16,10 @@ By default, if any of the above criterea are met, an email will be generated and
 3. Attachment: plot of date vs. price history of item
 4. Attachment: plot of date vs. price history of all watched items
 
+![](https://github.com/mitchelljbrown/amazon-price-tracker/tree/main/images/email_screenshot.png)
+
+![](https://github.com/mitchelljbrown/amazon-price-tracker/tree/main/images/graph_screenshot.png)
+
 ![](images/email_screenshot.png)
 ![](images/graph_screenshot.png)
 
