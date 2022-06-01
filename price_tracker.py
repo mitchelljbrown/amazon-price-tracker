@@ -90,7 +90,7 @@ def send_mail(album, type='drop'):
         msg['Subject'] = album_name + ' by the ' + band_name + ' has Dropped in Price!'
         msg['From'] = email_address
         msg['To'] = email_address
-        msg.set_content('A Vinyl Record you were watching has seen a considerable change in price! Now is your time to pick it up!\n\n' + album_name + ' by the ' + band_name + ' has gone from $' + str(old_price) + " to $" + str(new_price) + ' pick it up here: ' +  str(item_link))
+        msg.set_content('A Vinyl Record you were watching has seen a considerable change in price! Now is your time to pick it up!\n\n' + album_name + ' by the ' + band_name + ' has gone from $' + str(old_price) + " to $" + str(new_price) + '. pick it up here: ' +  str(item_link))
 
     if type == "available":
 
@@ -99,7 +99,7 @@ def send_mail(album, type='drop'):
         msg['Subject'] = album_name + ' by the ' + band_name + ' is Available Again'
         msg['From'] = email_address
         msg['To'] = email_address
-        msg.set_content('A Vinyl Record you were watching has become available again! Now is your time to pick it up!\n\n' + album_name + ' by the ' + band_name + ' is now available at $' + str(new_price) + ' pick it up here: ' +  str(item_link))
+        msg.set_content('A Vinyl Record you were watching has become available again! Now is your time to pick it up!\n\n' + album_name + ' by the ' + band_name + ' is now available at $' + str(new_price) + '. Pick it up here: ' +  str(item_link))
 
     # if we want to attach multiple files
     files = ['images/price_history.jpg', 'images/all_item_history.jpg']

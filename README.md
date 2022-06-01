@@ -1,7 +1,7 @@
 # amazon-price-tracker
 
 ## Overview
-Growing up I have always loved Music. After discovering my late grandfathers record collection (~2010), I was hooked on listening to and collecting vinyl records. As the years have passed, vinyl records have become more and more popular allowing record companies to release high quality 180g vinyl records. This increase in quality along with the increase in the price of vinyl as a material has made record collecting a very expensive hobby. 
+Growing up I have always loved music. After discovering my late grandfathers record collection (~2010), I was hooked on listening to and collecting vinyl records. As the years have passed, vinyl records have become more and more popular allowing record companies to release high quality 180g vinyl records. This increase in quality along with the increase in the price of vinyl as a material has made record collecting a very expensive hobby. 
 
 After years of shopping at various record stores and amazon.ca, I noticed the price of vinyl records can fluctuate alot. I wrote this module to allow users to track the price of their favourite vinyl records. This module is also equiped to deal with any amazon item you wish to track. Within function arguments, you can specify certain notification criterea. Currently, these are the options:
 
@@ -32,14 +32,14 @@ pip install price_tracker
 
 after installing `amazon-price-tracker` you need to privide a list or dictionary of items you want to track. A dictionary is used to increase readability when supplying many items. The dictionary should consist of "item name" keys and "link" values like the following. A list of urls can be used instead if prefered. 
 
-1. Specify email (required) and emial password (optional) as string in the `email_setup()` function
+1. Specify email (required) and emial password (optional) as string in the `email_setup()` function.
 
 ```python
 import price_tracker as pt
 
 pt.email_setup(email, password)
 ```
-2. Provide list of items to be scraped and tracked. These can be in dictionary or list format
+2. Provide a list of items to be scraped and tracked. These can be in dictionary or list format.
 
 ```python
 # Dictionary
@@ -53,7 +53,7 @@ items = ('https://www.amazon.ca/...',
         'https://www.amazon.ca/...')
 ```
 
-3. Run the main funciton
+3. Run the main funciton.
 ```
 pt.price_tracker(items)
 ```
@@ -81,7 +81,7 @@ pt.price_tracker(freq='day')    # set the frequency the prices are checked. Ente
 
 ## Dev Dependancies
 
-For scraping amazon.ca and storing and viaulizing data
+**For scraping amazon.ca and storing and viaulizing data**
 - BeautifulSoup
 - requests
 - time
@@ -92,7 +92,7 @@ For scraping amazon.ca and storing and viaulizing data
 - csv
 - os
 
-For Sending Emails
+**For Sending Emails**
 - smtplib
 - email.message
 - imghdr
