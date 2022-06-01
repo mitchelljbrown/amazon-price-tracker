@@ -16,9 +16,16 @@ By default, if any of the above criterea are met, an email will be generated and
 3. Attachment: plot of date vs. price history of item
 4. Attachment: plot of date vs. price history of all watched items
 
-![](email_screenshot.jpg)
+![](images/email_screenshot.png)
+![](images/graph_screenshot.png)
 
 ## Installation
+
+First make sure the module file "price_tracker.py" is downloaded and in your project working directory. Then open a terminal in your working directory.
+
+```console
+pip install price_tracker
+```
 
 ## Running The Project
 
@@ -27,7 +34,9 @@ after installing `amazon-price-tracker` you need to privide a list or dictionary
 1. Specify email (required) and emial password (optional) as string in the `email_setup()` function
 
 ```python
-email_setup(email, password)
+import price_tracker as pt
+
+pt.email_setup(email, password)
 ```
 2. Provide list of items to be scraped and tracked. These can be in dictionary or list format
 
@@ -47,6 +56,7 @@ items = ('https://www.amazon.ca/...',
 ```
 pt.price_tracker(items)
 ```
+The main function contains a while loop set to "True" and executes every x seconds. This is specified by the user as an argument and is 86400 (1 day) by default.
 
 ## Features
 ```python
