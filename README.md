@@ -16,13 +16,12 @@ By default, if any of the above criterea are met, an email will be generated and
 3. Attachment: plot of date vs. price history of item
 4. Attachment: plot of date vs. price history of all watched items
 
-![](https://github.com/mitchelljbrown/amazon-price-tracker/tree/main/images/email_screenshot.png)
+![](https://github.com/mitchelljbrown/amazon-price-tracker/blob/main/images/email_screenshot.PNG)
 
-![](https://github.com/mitchelljbrown/amazon-price-tracker/tree/main/images/graph_screenshot.png)
-
-![](images/email_screenshot.png)
-![](images/graph_screenshot.png)
-
+![](https://github.com/mitchelljbrown/amazon-price-tracker/blob/main/images/graph_screenshot.PNG)
+<!--- ![](images/email_screenshot.png)
+       ![](images/graph_screenshot.png)
+--->
 ## Installation
 
 First make sure the module file "price_tracker.py" is downloaded and in your project working directory. Then open a terminal in your working directory.
