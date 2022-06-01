@@ -1,9 +1,9 @@
 # amazon-price-tracker
 
 ## Overview
-Growing up I have always loved Music. After discovering my late grandfathers record collecting in highschool (~2010), I was hooked on listening and collecting records. As the years have passed, vinyl records have become more and more popular allowing record companies to release high quality 180g vinyl records. This increase in quality along with the price of vinyl has made record collecting a very expensive hobby. 
+Growing up I have always loved Music. After discovering my late grandfathers record collection (~2010), I was hooked on listening to and collecting vinyl records. As the years have passed, vinyl records have become more and more popular allowing record companies to release high quality 180g vinyl records. This increase in quality along with the increase in the price of vinyl as a material has made record collecting a very expensive hobby. 
 
-After years of shopping at various record stores and amazon.ca, I noticed the price of vinyl records can fluctuate alot. I wrote this module to allow users to track the price of their favourite vinyl records. Within function arguments, you can specify when you want to be notified. Currently, these are the options:
+After years of shopping at various record stores and amazon.ca, I noticed the price of vinyl records can fluctuate alot. I wrote this module to allow users to track the price of their favourite vinyl records. This module is also equiped to deal with any amazon item you wish to track. Within function arguments, you can specify certain notification criterea. Currently, these are the options:
 
 - when the price drops more than a specified amount
 - when the record becomes available if currently unavailable
@@ -19,9 +19,7 @@ By default, if any of the above criterea are met, an email will be generated and
 ![](https://github.com/mitchelljbrown/amazon-price-tracker/blob/main/images/email_screenshot.PNG)
 
 ![](https://github.com/mitchelljbrown/amazon-price-tracker/blob/main/images/graph_screenshot.PNG)
-<!--- ![](images/email_screenshot.png)
-       ![](images/graph_screenshot.png)
---->
+
 ## Installation
 
 First make sure the module file "price_tracker.py" is downloaded and in your project working directory. Then open a terminal in your working directory.
@@ -72,10 +70,13 @@ pt.create_csv()
 pt.update_price()
 
 # send an email the user
-pt.send_mail()
+pt.send_mail(type='drop')   # specify whether you want to be notified by a price drop or item availability
+
+# update .csv and send email
+pt.update_and_email()
 
 # master function to scrape data and send an email if the price of an item drops or becomes available
-pt.price_tracker()
+pt.price_tracker(freq='day')    # set the frequency the prices are checked. Enter 'day', 'week', or specify in seconds
 ```
 
 ## Dev Dependancies
