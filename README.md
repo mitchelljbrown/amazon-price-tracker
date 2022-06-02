@@ -12,7 +12,7 @@ After years of shopping at various record stores and amazon.ca, I noticed the pr
 
 By default, if any of the above criterea are met, an email will be generated and sent to the user which contains:
 
-1. Inforation regarding the price drop/record availabilty
+1. Information regarding the price drop/record availabilty
 2. Link to the product
 3. Attachment: plot of date vs. price history of item
 4. Attachment: plot of date vs. price history of all watched items
@@ -31,7 +31,7 @@ pip install price_tracker
 
 ## Running The Project
 
-after installing `amazon-price-tracker` you need to privide a list or dictionary of items you want to track. A dictionary is used to increase readability when supplying many items. The dictionary should consist of "item name" keys and "link" values like the following. A list of urls can be used instead if prefered. 
+after installing `amazon-price-tracker` you need to provide a list or dictionary of items you want to track. A dictionary is used to increase readability when supplying many items. The dictionary should consist of "item name" keys and "link" values like the following. A list of urls can be used instead if prefered. 
 
 1. Specify email (required) and emial password (optional) as string in the `email_setup()` function.
 
