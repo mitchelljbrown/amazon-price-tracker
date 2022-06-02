@@ -1,7 +1,8 @@
 # amazon-price-tracker
 
+An application to track the prices of amazon.ca items and send personalized emails based on specified criterea. 
+
 ## Overview
-Growing up I have always loved music. After discovering my late grandfathers record collection (~2010), I was hooked on listening to and collecting vinyl records. As the years have passed, vinyl records have become more and more popular allowing record companies to release high quality 180g vinyl records. This increase in quality along with the increase in the price of vinyl as a material has made record collecting a very expensive hobby. 
 
 After years of shopping at various record stores and amazon.ca, I noticed the price of vinyl records can fluctuate alot. I wrote this module to allow users to track the price of their favourite vinyl records. This module is also equiped to deal with any amazon item you wish to track. Within function arguments, you can specify certain notification criterea. Currently, these are the options:
 
